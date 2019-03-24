@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+
+  chatterley-db:
+    container_name: chatterley-db
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: chatterley
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+
+networks:
+  default:
+    name: chatterley-network
