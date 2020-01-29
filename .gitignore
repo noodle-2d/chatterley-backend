@@ -1,5 +1,16 @@
-.idea/
-target/
-project/target/
-*.class
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+out
+
+# Ignore IntelliJ IDEA files
+.idea
+*.iml
+
+# Ignore log files
 *.log
+
+# Ignore api gateway files
+# todo
